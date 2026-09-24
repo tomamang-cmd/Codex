@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>旅伴・沖繩慢旅</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">旅</span><span>旅伴</span></a>
+      <nav aria-label="主要選單">
+        <a class="nav-item active" href="#schedule"><span>▣</span>旅程</a>
+        <a class="nav-item" href="#spots"><span>⌖</span>地圖</a>
+        <a class="nav-item" href="#memories"><span>▧</span>回憶</a>
+        <a class="nav-item" href="#expenses"><span>◎</span>帳務</a>
+      </nav>
+      <div class="side-bottom">
+        <button class="new-trip" id="newTrip">＋ 新增旅程</button>
+        <div class="profile"><div class="avatar small">安</div><div><strong>安琪</strong><small>我的帳號</small></div><span class="chevron">⌄</span></div>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <div class="crumb">我的旅程 <span>/</span> 沖繩慢旅</div>
+        <div class="header-actions"><button class="round-btn" aria-label="通知">♧</button><button class="invite" id="inviteBtn">＋ 邀請旅伴</button></div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy"><p class="eyebrow">OKINAWA, JAPAN · 2024</p><h1>沖繩慢旅</h1><p class="trip-date">5/18（六）— 5/22（三） <span>・</span> 5 天 4 夜</p><div class="companions"><div class="faces"><span class="avatar a1">安</span><span class="avatar a2">小</span><span class="avatar a3">J</span><span class="avatar a4">＋2</span></div><span>和 5 位旅伴一起出發</span></div></div>
+        <div class="hero-art"><div class="sun"></div><div class="cloud c1"></div><div class="cloud c2"></div><div class="island i1"></div><div class="island i2"></div><div class="palm p1">♠</div><div class="palm p2">♠</div></div>
+      </section>
+
+      <section class="day-tabs" aria-label="行程天數">
+        <button class="day-tab active" data-day="day1"><b>Day 1</b><span>5/18 六</span></button>
+        <button class="day-tab" data-day="day2"><b>Day 2</b><span>5/19 日</span></button>
+        <button class="day-tab" data-day="day3"><b>Day 3</b><span>5/20 一</span></button>
+        <button class="day-tab" data-day="day4"><b>Day 4</b><span>5/21 二</span></button>
+        <button class="day-tab" data-day="day5"><b>Day 5</b><span>5/22 三</span></button>
+      </section>
+
+      <section class="content" id="schedule">
+        <div class="itinerary-title"><div><p class="eyebrow orange">DAY 1 · NAHA</p><h2>抵達那霸，先吃一碗麵吧！</h2></div><button class="add-place" id="addPlace">＋ 加入景點</button></div>
+        <div class="day-panel active" id="day1">
+          <article class="place-card featured">
+            <div class="time"><b>12:30</b><span>抵達</span></div><div class="timeline-dot plane">✈</div>
+            <img src="https://images.unsplash.com/photo-1564419434663-c49967363849?auto=format&fit=crop&w=680&q=85" alt="沖繩海岸" />
+            <div class="place-info"><div class="place-type">交通</div><h3>那霸機場</h3><p>領取 Wi-Fi、租車後前往市區</p><a href="https://maps.google.com/?q=Naha+Airport" target="_blank" rel="noopener">⌖ 在 Google 地圖開啟</a></div><button class="more" aria-label="更多選項">•••</button>
+          </article>
+          <article class="place-card">
+            <div class="time"><b>14:00</b><span>午餐</span></div><div class="timeline-dot food">●</div>
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=480&q=85" alt="沖繩麵" />
+            <div class="place-info"><div class="place-type coral">美食</div><h3>けんぱーのすばやー</h3><p>在地人推薦的沖繩麵，湯頭清爽。</p><a href="https://maps.google.com/?q=Kempasoba+Naha" target="_blank" rel="noopener">⌖ 在 Google 地圖開啟</a></div><button class="more" aria-label="更多選項">•••</button>
+          </article>
+          <article class="place-card">
+            <div class="time"><b>16:00</b><span>散步</span></div><div class="timeline-dot spot">●</div>
+            <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=480&q=85" alt="沖繩街景" />
+            <div class="place-info"><div class="place-type green">景點</div><h3>國際通</h3><p>逛逛雜貨店，買一杯島胡椒冰淇淋。</p><a href="https://maps.google.com/?q=Kokusai+Dori+Naha" target="_blank" rel="noopener">⌖ 在 Google 地圖開啟</a></div><button class="more" aria-label="更多選項">•••</button>
+          </article>
+        </div>
+        <div class="day-panel empty" id="day2"><div>🌊<h3>前往古宇利島</h3><p>今日行程正在整理中。</p></div></div>
+        <div class="day-panel empty" id="day3"><div>☀️<h3>海邊的悠閒一天</h3><p>今日行程正在整理中。</p></div></div>
+        <div class="day-panel empty" id="day4"><div>🌺<h3>探索南部小鎮</h3><p>今日行程正在整理中。</p></div></div>
+        <div class="day-panel empty" id="day5"><div>✈️<h3>帶著回憶回家</h3><p>今日行程正在整理中。</p></div></div>
+      </section>
+    </main>
+
+    <aside class="rightbar">
+      <section class="weather"><div><span class="weather-icon">☀</span><p>那霸市，沖繩</p></div><strong>27°</strong><small>晴時多雲　降雨 10%</small></section>
+      <section class="side-section" id="memories"><div class="section-heading"><h2>旅途小記</h2><button id="addMemory">＋ 新增</button></div><div class="memory-card"><div class="memory-image"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="海邊回憶" /><span>♡ 12</span></div><p>第一眼的沖繩藍，好不真實！</p><small>安琪 · 剛剛</small></div><button class="view-all">查看所有回憶 →</button></section>
+      <section class="side-section expense-section" id="expenses"><div class="section-heading"><h2>旅費小幫手</h2><button id="addReceipt">＋ 記帳</button></div><div class="expense-total"><span>目前總支出</span><strong>¥ 42,680</strong><small>已記錄 8 筆</small></div><div class="expense-row"><span class="expense-icon">⌑</span><div><b>租車費</b><small>安琪先付 · 5 人均分</small></div><strong>¥ 18,400</strong></div><button class="receipt-upload" id="receiptUpload">▧　上傳發票／收據</button></section>
+    </aside>
+
+    <div class="modal-backdrop" id="modal"><div class="modal" role="dialog" aria-modal="true"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+    <input id="fileInput" type="file" accept="image/*" hidden />
+    <script src="app.js"></script>
+  </body>
+</html>
