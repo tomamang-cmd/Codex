@@ -1,6 +1,6 @@
 const { createClient } = window.supabase;
 
-const supabase = createClient(
+const supabaseClient = createClient(
   window.SUPABASE_CONFIG.url,
   window.SUPABASE_CONFIG.key
 );
