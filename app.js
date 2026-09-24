@@ -182,7 +182,7 @@ async function savePlace() {
     return;
   }
 
-  const { error } = await supabase.rpc('save_itinerary_item', {
+  const { error } = await supabaseClient.rpc('save_itinerary_item', {
     p_password: editorPassword,
     p_author: currentUser,
     p_day_number: currentDay,
@@ -210,7 +210,7 @@ async function deletePlace(id) {
 
   if (!window.confirm('確定要刪除這個行程嗎？')) return;
 
-  const { error } = await supabase.rpc('delete_itinerary_item', {
+  const { error } = await supabaseClient.rpc('delete_itinerary_item', {
     p_password: editorPassword,
     p_author: currentUser,
     p_id: id
@@ -248,7 +248,7 @@ document.addEventListener('click', async (event) => {
   if (event.target.id === 'verifyPassword') {
     const password = document.querySelector('#passwordInput').value;
 
-    const { data, error } = await supabase.rpc('can_edit_trip', {
+    const { data, error } = await supabaseClient.rpc('can_edit_trip', {
       p_password: password,
       p_author: currentUser
     });
