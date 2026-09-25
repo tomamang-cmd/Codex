@@ -192,7 +192,7 @@ async function savePlace() {
     p_description: document.querySelector('#placeDescription').value.trim(),
     p_map_url: document.querySelector('#placeMapUrl').value.trim(),
     p_image_url: null,
-    p_sort_order: Date.now(),
+    p_sort_order: 0,
     p_id: null
   });
 
