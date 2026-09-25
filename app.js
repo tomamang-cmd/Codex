@@ -253,10 +253,15 @@ document.addEventListener('click', async (event) => {
       p_author: currentUser
     });
 
-    if (error || !data) {
-      showMessage('管理密碼不正確，或此使用者沒有編輯權限。');
-      return;
-    }
+if (error) {
+  showMessage(`驗證連線錯誤：${error.message}`);
+  return;
+}
+
+if (!data) {
+  showMessage('管理密碼不正確，或此使用者沒有編輯權限。');
+  return;
+}
 
     editorPassword = password;
     editorEnabled = true;
